@@ -23,7 +23,7 @@ const Header = ({ title, onBackPress, icon }) => {
           }}
           onPress={onBackPress}
         >
-          {icon || <Ionicons name="arrow-back" size={24} color="#0273F7" />}
+          {icon || <Ionicons name="arrow-back" size={28} color="#0273F7" />}
         </Pressable>
       </View>
 

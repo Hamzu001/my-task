@@ -23,7 +23,7 @@ const Social = ({promptAsync}) => {
       <View style={styles.iconsContainer}>
         <TouchableOpacity
           style={styles.iconstyle}
-          onPress={() => promptAsync()}
+          // onPress={() => promptAsync()}
         >
           <FontAwesome
             name="google"

@@ -5,6 +5,7 @@ import {
   Alert,
   TextInput,
   ToastAndroid,
+  Image,
 } from "react-native";
 import styles from "../../style/HomeStyle";
 import React, { useState } from "react";
@@ -36,8 +37,8 @@ const Form = ({ registerHandler }) => {
       <Text style={styles.subText}>Hello, welcome back to Chat</Text>
       <View style={styles.inputAlign}>
         <View style={styles.inputContainer}>
-          <FontAwesome5 name="money-check-alt" size={24} color="green" />
-          <Text style={{ color: "#f9f9fa", marginLeft: 8 }}> +92 </Text>
+          <Image source={require('../../assets/images/flag.png')} style={{width:34, height:22 }}  />
+          <Text style={{ color: "#f9f9fa", marginLeft: 8 }}> +94 </Text>
           <TextInput
             style={styles.input}
             placeholder=" 7822345679"

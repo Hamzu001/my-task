@@ -2,27 +2,29 @@ import { Text, View, TouchableOpacity, TextInput } from "react-native";
 import styles from "../../style/SecScreenStyle";
 import { FontAwesome, Ionicons, MaterialIcons } from "@expo/vector-icons";
 import Entypo from "@expo/vector-icons/Entypo";
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import { useState } from "react";
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 
 const menuItems = [
   {
     id: "1",
-    icon: <MaterialIcons name="photo" size={24} color="#fff" />,
+    icon: <MaterialIcons name="photo" size={28} color="#fff" />,
     name: "Gallery",
   },
   {
     id: "2",
-    icon: <MaterialIcons name="insert-drive-file" size={24} color="#fff" />,
+    icon: <MaterialIcons name="insert-drive-file" size={28} color="#fff" />,
     name: "Files",
   },
   {
     id: "3",
-    icon: <Ionicons name="location-outline" size={24} color="#fff" />,
+    icon: <FontAwesome6 name="location-dot" size={28} color="#fff" />,
     name: "Location",
   },
   {
     id: "4",
-    icon: <Ionicons name="person-outline" size={24} color="#fff" />,
+    icon: <FontAwesome5 name="users" size={28} color="#fff" />,
     name: "Contact",
   },
 ];
@@ -55,22 +57,25 @@ const BottomItems = () => {
             <FontAwesome name="th-large" size={24} color="#0361cd" />
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.iconButton}>
-            <Entypo name="emoji-happy" size={24} color="#0361cd" />
-          </TouchableOpacity>
+          <View style={styles.inputSubContainer}>
+            <TouchableOpacity style={styles.iconButtonLeft}>
+              <Entypo name="emoji-happy" size={24} color="gray" />
+            </TouchableOpacity>
 
-          <TextInput
-            style={styles.input}
-            placeholder="Message Type Here"
-            placeholderTextColor="#aaa"
-          />
+            {/* Text input */}
+            <TextInput
+              style={styles.input}
+              placeholder="Message Type Here"
+              placeholderTextColor="#aaa"
+            />
 
-          <TouchableOpacity style={styles.iconButton}>
-            <Ionicons name="mic" size={24} color="#0361cd" />
-          </TouchableOpacity>
+            <TouchableOpacity style={styles.iconButtonRight}>
+              <Ionicons name="mic" size={24} color="gray" />
+            </TouchableOpacity>
+          </View>
 
           <TouchableOpacity style={styles.sendButton}>
-            <Ionicons name="send" size={20} color="#fff" />
+            <FontAwesome name="arrow-circle-right" size={38} color="#4285F4" />
           </TouchableOpacity>
         </View>
       </View>

@@ -20,10 +20,22 @@ export const chatData = [
     {
       id: 9,
       message: "Hi, Let me know client agree or not continue the design",
+      time: "Mon, 14 Nov, 9:20 AM",
       sender: "other",
     },
     {
       id: 10,
+      message: "Hi, Let me know client agree or not continue the design",
+      sender: "me",
+    },
+    {
+      id: 11,
+      message: "Hi, Let me know client agree or not continue the design",
+      time: "Mon, 14 Nov, 9:20 AM",
+      sender: "other",
+    },
+    {
+      id: 12,
       message: "Hi, Let me know client agree or not continue the design",
       sender: "me",
     },
